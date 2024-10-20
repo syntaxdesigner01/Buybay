@@ -5,9 +5,9 @@ import Navbar from '../components/Navbar'
 
 export default function Home() {
   return (
-    <main className='px-10 '>
+    <section className='px-10 '>
       <HomeTopBar/>
       <Navbar/>
-    </main>
+    </section>
   )
 }
