@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "./Button";
 
 export default function HomeHeader() {
   return (
@@ -7,14 +8,14 @@ export default function HomeHeader() {
         <div className="">
           <section className="flex flex-col lg:flex-row justify-between w-full items-center h-full">
             {/* First Aside - Text Section */}
-            <aside className="flex flex-col justify-between h-[400px] py-32 w-full lg:w-[30%] px-10">
-              <p>New Arrivals 2024</p>
-              <div>
+            <aside className="flex flex-col justify-between h-[400px] py-20 gap-y-16 w-full lg:w-[30%] px-10">
+              <p className="text-xl">New Arrivals 2024</p>
+              <div className="font-bold text-3xl">
                 <h1>The Clothing</h1>
                 <h1>Collection</h1>
               </div>
               <div>
-                <button>Shop now</button>
+                <Button Text="Shop now" Link="/" Pointer={false} />
               </div>
             </aside>
 
