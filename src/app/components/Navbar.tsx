@@ -13,7 +13,7 @@ export default function Navbar() {
   const path = usePathname();
 
   useEffect(() => {
-    setCartItemCount(1);
+    setCartItemCount(10);
     setLikeCount(4);
   }, []);
 
@@ -49,14 +49,14 @@ export default function Navbar() {
           <section className="flex gap-10">
             <div className="relative">
               <HiOutlineHeart className="text-3xl" />
-              <div className="bg-[#FFBD27] h-4 w-4 p-1 rounded-full flex justify-center items-center absolute top-[-0.1em] left-4  right-0">
+              <div className="bg-secondary h-5 w-5 p-2 rounded-full flex justify-center items-center absolute top-[-0.1em] left-4  right-0">
                 <span>{likeCount}</span>
               </div>
             </div>
 
             <div className="relative">
               <BsCart4 className="text-2xl" />
-              <div className="bg-[#FFBD27] h-4 w-4 p-1 rounded-full flex justify-center items-center absolute top-[-0.1em] left-4  right-0">
+              <div className="bg-secondary h-5 w-5 p-2 rounded-full flex justify-center items-center absolute top-[-0.1em] left-4  right-0">
                 <span>{cartItemCount}</span>
               </div>
             </div>
@@ -97,14 +97,14 @@ export default function Navbar() {
           <section className="flex gap-10">
             <div className="relative">
               <HiOutlineHeart className="text-3xl" />
-              <div className="bg-[#FFBD27] h-4 w-4 p-1 rounded-full flex justify-center items-center absolute top-[-0.1em] left-4  right-0">
+              <div className="bg-secondary h-5 w-5 p-2 rounded-full flex justify-center items-center absolute top-[-0.1em] left-4  right-0">
                 <span>{likeCount}</span>
               </div>
             </div>
 
             <div className="relative">
               <BsCart4 className="text-2xl" />
-              <div className="bg-[#FFBD27] h-4 w-4 p-1 rounded-full flex justify-center items-center absolute top-[-0.1em] left-4  right-0">
+              <div className="bg-secondary h-5 w-5 p-2 rounded-full flex justify-center items-center absolute top-[-0.1em] left-4  right-0">
                 <span>{cartItemCount}</span>
               </div>
             </div>
