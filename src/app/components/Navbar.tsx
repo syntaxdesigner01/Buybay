@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { HiMenuAlt1, HiOutlineHeart } from "react-icons/hi";
 import { BsCart4 } from "react-icons/bs";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 import { CiSearch } from "react-icons/ci";
@@ -10,10 +10,13 @@ import { CiSearch } from "react-icons/ci";
 export default function Navbar() {
   const [likeCount, setLikeCount] = useState<number>(0);
   const [cartItemCount, setCartItemCount] = useState<number>(0);
-  const path = usePathname()
+  const path = usePathname();
 
-  setCartItemCount(1)
-  setLikeCount(4)
+  useEffect(() => {
+    setCartItemCount(1);
+    setLikeCount(4);
+  }, []);
+
   return (
     <section className="pt-4">
       {path === "/" ? (
