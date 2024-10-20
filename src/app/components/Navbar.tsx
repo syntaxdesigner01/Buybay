@@ -12,6 +12,8 @@ export default function Navbar() {
   const [cartItemCount, setCartItemCount] = useState<number>(0);
   const path = usePathname()
 
+  setCartItemCount(1)
+  setLikeCount(4)
   return (
     <section className="pt-4">
       {path === "/" ? (
