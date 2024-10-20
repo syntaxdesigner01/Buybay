@@ -1,11 +1,13 @@
 import HomeTopBar from '@/app/components/HomeTopBar'
-import React from 'react'
+import Navbar from '@/app/components/Navbar'
 
-export default function About() {
+
+export default function AboutPage() {
   return (
-    <main>
+    <section className='px-10'>
         <HomeTopBar/>
+        <Navbar/>
       <div>About</div>
-    </main>
+    </section>
   );
 }
