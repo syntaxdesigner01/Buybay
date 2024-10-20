@@ -1,4 +1,3 @@
-
 import React from "react";
 
 export default function HomeHeader() {
@@ -19,27 +18,30 @@ export default function HomeHeader() {
               </div>
             </aside>
 
-            <aside className="flex flex-col justify-start items-end h-[400px] py-20 w-full lg:w-[60%] px-10 relative overflow-hidden ">
+            <aside className="flex flex-col justify-start items-end h-[400px] py-20 w-full lg:w-[70%] px-10 relative overflow-hidden">
               <section className="relative left-[20vw] bottom-[-15vh]">
-                <section className="relative bottom-[20vh] right-[30vw]">
+                <section
+                  className="relative bottom-[20vh] right-[30vw]"
+                  id="ellipse-background"
+                >
                   <img
                     src={"/Ellipse 36.png"}
                     alt=""
-                    width={'370px'}
-                    height={'370px'}
+                    width={"370px"}
+                    height={"370px"}
                   />
 
+                  {/* man and woman on the show */}
                   <section className=" relative top-[-60vh]">
                     <section className="flex items-center gap-0 z-50">
-
                       <section className="relative right-[-10vw]">
                         <img
                           src={
                             "/Look_of_the_Week_-_Grey_Suit_and_Sock_Boots-removebg-preview 1.png"
                           }
                           alt=""
-                          width={'260px'}
-                          height={'260px'}
+                          width={"260px"}
+                          height={"260px"}
                         />
                       </section>
 
@@ -49,15 +51,31 @@ export default function HomeHeader() {
                             "/Men_teal_blue_Suit__beach_wedding_suit__blue_groomsmen_Suit__Gift_For_men__Slim_Fit_Suit__wedding_suit_for_Groom__cocktail_party_men_suit_-removebg-preview 1.png"
                           }
                           alt=""
-                          width={'200px'}
-                          height={'200px'}
+                          width={"200px"}
+                          height={"200px"}
                         />
                       </section>
                     </section>
                   </section>
                 </section>
 
-                
+                <section className="absolute top-[17vh] lg:left-12">
+                  <img
+                    src={"/bell.png"}
+                    alt=""
+                    width={"150px"}
+                    height={"150px"}
+                  />
+                </section>
+
+                <section className="absolute top-[-10vh] left-[-35vw]">
+                  <img
+                    src={"/Ellipse2.png"}
+                    alt=""
+                    width={"70px"}
+                    height={"70px"}
+                  />
+                </section>
               </section>
             </aside>
           </section>
