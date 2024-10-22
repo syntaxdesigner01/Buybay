@@ -27,7 +27,7 @@ export default function SectionTitleCard({
         <Image src={"/icons/lineTittle.svg"} alt="" width={100} height={100} />
       </div>
 
-      <section>
+      <section className='font-bold text-2xl'>
         <h1>{HeaderText}</h1>
       </section>
     </section>
