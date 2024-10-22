@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar'
 import HomeHeader from '../components/HomeHeader'
 import GeneralCategoryDisplay from '../components/GeneralCategoryDisplay'
 import PopularCategoryDisplay from '../components/PopularCategoryDisplay'
+import AllProductCategoryDisplay from '../components/AllProductCategoryDisplay'
 
 
 export default function HomePage() {
@@ -13,6 +14,7 @@ export default function HomePage() {
       <HomeHeader/>
       <GeneralCategoryDisplay/>
       <PopularCategoryDisplay/>
+      <AllProductCategoryDisplay/>
     </section>
   )
 }
