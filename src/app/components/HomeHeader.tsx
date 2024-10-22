@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "./Button";
+// import Button from "./Button";
 
 export default function HomeHeader() {
   return (
@@ -15,7 +15,10 @@ export default function HomeHeader() {
                 <h1>Collection</h1>
               </div>
               <div>
-                <Button Text="Shop now" Link="/" Pointer={false} />
+                {/* <Button Text="Shop now" Link="/" Pointer={false} /> */}
+                <button className=" border-2 px-10 flex items-center justify-center gap-4 border-black font-bold py-2">
+                  Shop now
+                </button>
               </div>
             </aside>
 
