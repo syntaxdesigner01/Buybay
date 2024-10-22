@@ -16,7 +16,7 @@ export default function Button({
 }: {
   Text: string;
   Link: string;
-  Pointer: boolean;
+  Pointer:boolean;
 }) {
   const [showArrow, setShowArrow] = useState<boolean>(false);
 
@@ -24,7 +24,7 @@ export default function Button({
 
   useEffect(() => {
     setShowArrow(Pointer);
-  }, []);
+  }, [Pointer]);
 
   return (
     <button onClick={() => route.push(Link)} className=" border-2 px-4  flex items-center justify-center gap-2 border-black text-sm">
