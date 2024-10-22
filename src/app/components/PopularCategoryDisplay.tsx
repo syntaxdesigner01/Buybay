@@ -4,7 +4,11 @@ import SectionTitleCard from './SectionTitleCard'
 export default function PopularCategoryDisplay() {
   return (
     <section className="mb-20">
-      <SectionTitleCard Text="Shop By Category" Position='center' />
+      <SectionTitleCard
+        Text="Shop By Category"
+        Position="center"
+        HeaderText="Popular On The Buybay Store."
+      />
     </section>
   );
 }
