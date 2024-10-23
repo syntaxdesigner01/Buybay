@@ -5,10 +5,25 @@ import { DataType } from '@/utils/products';
 
 
 
-export default function ProductCard({image,name,description,stars,price,oldPrice}:DataType) {
+export default function ProductCard({
+  image,
+  name,
+  description,
+  stars,
+  price,
+  oldPrice,
+  Width,
+  BoxWidth,
+  BoxHeight,
+}: DataType) {
   return (
-    <section>
-      <AllProductCategoryCardImage image={image} />
+    <section className="w-full">
+      <AllProductCategoryCardImage
+        image={image}
+        Width={Width}
+        BoxWidth={BoxWidth}
+        BoxHeight={BoxHeight}
+      />
       <section>
         <p className="text-[13px]">{name} </p>
         <h1 className="font-semibold text-md">{description}</h1>

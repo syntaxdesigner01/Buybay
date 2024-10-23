@@ -6,6 +6,9 @@ export interface DataType {
     price: string;
     oldPrice?: string;
     image: string;
+    Width?:string
+    BoxWidth?:string
+    BoxHeight?:string
 }
 
 export const allProducts: DataType[] = [
