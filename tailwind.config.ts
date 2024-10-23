@@ -15,7 +15,8 @@ const config: Config = {
         text: '#000000',
         textTitle:'#943C50',
         imageCardBg:'#F2F3F5',
-        Gray:'#00000080'
+        Gray:'#00000080',
+        Yellow:'#FFC21F'
       },
     },
   },

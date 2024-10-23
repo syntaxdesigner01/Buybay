@@ -1,6 +1,6 @@
 import React from "react";
 import SectionTitleCard from "./SectionTitleCard";
-import PopularCategoryCard from "./PopularCategoryCard";
+import {PopularCategoryCard} from "./PopularCategoryCard";
 
 export default function PopularCategoryDisplay() {
   return (
