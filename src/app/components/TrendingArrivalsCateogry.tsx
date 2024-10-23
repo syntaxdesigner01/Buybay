@@ -53,13 +53,17 @@ export default function TrendingArrivalsCategory() {
 
         <section className="relative top-[-15vw] left-10 text-white flex flex-col gap-4">
           <h1 className="text-4xl w-2/3 font-semibold ">
-            Cole Haan Men's Slim Fit Suit
+            Cole Haan Men&apos;s Slim Fit Suit
           </h1>
           <Button
             Link=""
             Pointer
             Text="Shop now"
-            Style={{ border: "white 1px solid", fontSize: "14px",padding:'4px 0' }}
+            Style={{
+              border: "white 1px solid",
+              fontSize: "14px",
+              padding: "4px 0",
+            }}
             Width="40%"
           />
         </section>

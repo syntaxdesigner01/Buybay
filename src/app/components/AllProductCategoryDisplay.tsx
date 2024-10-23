@@ -2,8 +2,6 @@ import React from "react";
 import SectionTitleCard from "./SectionTitleCard";
 import { GoDotFill } from "react-icons/go";
 import { allProducts, DataType } from "@/utils/products";
-import { AllProductCategoryCardImage } from "./PopularCategoryCard";
-import StarCount from "./StarCount";
 import ProductCard from "./ProductCard";
 
 export default function AllProductCategoryDisplay() {

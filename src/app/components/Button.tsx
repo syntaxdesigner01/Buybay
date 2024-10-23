@@ -14,13 +14,13 @@ export default function Button({
   Link,
   Pointer,
   Width,
-  Style
+  Style,
 }: {
   Text: string;
   Link: string;
   Width?: string;
-  Pointer:boolean;
-  Style?: {};  // for future use if needed  style={{width:Width}}
+  Pointer: boolean;
+  Style?: React.CSSProperties;
 }) {
   const [showArrow, setShowArrow] = useState<boolean>(false);
 
