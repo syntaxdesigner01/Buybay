@@ -5,7 +5,8 @@ import GeneralCategoryDisplay from "../components/GeneralCategoryDisplay";
 import PopularCategoryDisplay from "../components/PopularCategoryDisplay";
 import AllProductCategoryDisplay from "../components/AllProductCategoryDisplay";
 import FeaturedWeekCateogry from "../components/FeaturedWeekCateogry";
-import TrendingArrivals from "../components/TrendingArrivals";
+import TrendingArrivalsCateogry from "../components/TrendingArrivalsCateogry";
+import BestSellerCateogry from "../components/BestSellerCateogry";
 
 export default function HomePage() {
   return (
@@ -22,8 +23,12 @@ export default function HomePage() {
       <FeaturedWeekCateogry />
 
       <section className="px-10  py-20">
-        <TrendingArrivals/>
+        <TrendingArrivalsCateogry />
       </section>
+
+      <section className="px-10  py-20">
+        <BestSellerCateogry/>
+        </section>
     </>
   );
 }

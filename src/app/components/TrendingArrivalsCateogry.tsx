@@ -4,9 +4,9 @@ import ProductCard from "./ProductCard";
 import Image from "next/image";
 import Button from "./Button";
 
-export default function TrendingArrivals() {
+export default function TrendingArrivalsCategory() {
   return (
-    <section className="mb-20 flex justify-between w-full items-center ">
+    <section className="mb-20 flex justify-between w-full items-center relative ">
       <section className="">
         <SectionTitleCard
           HeaderText="Trending Arrivals "
@@ -59,7 +59,7 @@ export default function TrendingArrivals() {
             Link=""
             Pointer
             Text="Shop now"
-            Style={{ border: "white 1px solid", fontSize: "14px" }}
+            Style={{ border: "white 1px solid", fontSize: "14px",padding:'4px 0' }}
             Width="40%"
           />
         </section>
