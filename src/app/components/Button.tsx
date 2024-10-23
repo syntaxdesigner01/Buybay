@@ -13,12 +13,14 @@ export default function Button({
   Text,
   Link,
   Pointer,
-  Width
+  Width,
+  Style,
 }: {
   Text: string;
   Link: string;
   Width?: string;
-  Pointer:boolean;
+  Pointer: boolean;
+  Style?: React.CSSProperties;
 }) {
   const [showArrow, setShowArrow] = useState<boolean>(false);
 
@@ -32,7 +34,7 @@ export default function Button({
     <button
       onClick={() => route.push(Link)}
       className={`border-2 px-4 w-[${Width}] flex items-center justify-center gap-2 border-black text-sm`}
-      // style={{width:Width}}
+      style={Style}
     >
       {Text}
       {showArrow && <FaArrowRightLong size={10} />}
