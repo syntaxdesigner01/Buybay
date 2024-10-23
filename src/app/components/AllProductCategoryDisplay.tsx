@@ -2,10 +2,9 @@ import React from "react";
 import SectionTitleCard from "./SectionTitleCard";
 import { GoDotFill } from "react-icons/go";
 import { allProducts, DataType } from "@/utils/products";
-import { AllProductCategoryCard } from "./PopularCategoryCard";
+import { AllProductCategoryCardImage } from "./PopularCategoryCard";
 import StarCount from "./StarCount";
-
-
+import ProductCard from "./ProductCard";
 
 export default function AllProductCategoryDisplay() {
   return (
@@ -43,18 +42,15 @@ export default function AllProductCategoryDisplay() {
               className="w-[22vw] flex flex-col gap-2 justify-center items-start"
               key={data.id}
             >
-              <AllProductCategoryCard image={data?.image} />
-              <section>
-                <p className="text-[13px]">{data.name} </p>
-                <h1 className="font-semibold text-md">{data.description}</h1>
-                  <StarCount Count={data.stars} />
-                <section className="flex gap-6">
-                  <aside>{data.price}</aside>
-                  <aside>
-                    {data.oldPrice && <del>{data?.oldPrice}</del>}
-                  </aside>
-                </section>
-              </section>
+              <ProductCard
+                id={data.id}
+                image={data?.image}
+                name={data.name}
+                description={data.description}
+                stars={data.stars}
+                price={data.price}
+                oldPrice={data.oldPrice}
+              />
             </section>
           );
         })}

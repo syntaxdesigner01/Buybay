@@ -12,7 +12,7 @@ const baseUrl = `/category1`
 
 
 
-export  function AllProductCategoryCard({image}:{image:string}) {
+export  function AllProductCategoryCardImage({image}:{image:string}) {
 const baseUrl = `/Products`
 
   return (
