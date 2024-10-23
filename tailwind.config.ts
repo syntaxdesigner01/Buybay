@@ -13,6 +13,10 @@ const config: Config = {
         secondary: '#FFBD27',
         background: '#F5F2F9',
         text: '#000000',
+        textTitle:'#943C50',
+        imageCardBg:'#F2F3F5',
+        Gray:'#00000080',
+        Yellow:'#FFC21F'
       },
     },
   },
