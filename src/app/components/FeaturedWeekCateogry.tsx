@@ -3,6 +3,10 @@ import SectionTitleCard from './SectionTitleCard'
 import FeaturedWeekCard from './FeaturedWeekCard';
 import Image from 'next/image';
 
+/**
+ * @description Featured Products of the week Cateogry component
+ * @returns 
+ */
 export default function FeaturedWeekCateogry() {
   return (
     <section className="bg-background pt-20 pb-28 px-10 mb-20 w-full">
