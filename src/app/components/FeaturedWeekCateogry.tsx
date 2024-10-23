@@ -1,5 +1,6 @@
 import React from 'react'
 import SectionTitleCard from './SectionTitleCard'
+import FeaturedWeekCard from './FeaturedWeekCard';
 
 export default function FeaturedWeekCateogry() {
   return (
@@ -9,6 +10,8 @@ export default function FeaturedWeekCateogry() {
         Position="start"
         Text="Shop By Category "
       />
+
+      <FeaturedWeekCard />
     </section>
   );
 }

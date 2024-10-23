@@ -1,4 +1,4 @@
-interface DataType {
+export interface DataType {
     id: number;
     name: string;
     description: string; // Fixed the typo here ('desciption' to 'description')

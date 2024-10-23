@@ -1,18 +1,10 @@
 import React from "react";
 import SectionTitleCard from "./SectionTitleCard";
 import { GoDotFill } from "react-icons/go";
-import { FaStar } from "react-icons/fa";
-import { allProducts } from "@/utils/products";
+import { allProducts, DataType } from "@/utils/products";
 import { AllProductCategoryCard } from "./PopularCategoryCard";
-interface DataType {
-  id: number;
-  name: string;
-  description: string; // Fixed the typo here ('desciption' to 'description')
-  stars: number;
-  price: string;
-  oldPrice?: string;
-  image: string;
-}
+import StarCount from "./StarCount";
+
 
 
 export default function AllProductCategoryDisplay() {
@@ -55,24 +47,7 @@ export default function AllProductCategoryDisplay() {
               <section>
                 <p className="text-[13px]">{data.name} </p>
                 <h1 className="font-semibold text-md">{data.description}</h1>
-                <div className="flex gap-4 text-Yellow">
-                  <span>
-                    <FaStar />
-                  </span>
-                  <span>
-                    <FaStar />
-                  </span>
-                  <span>
-                    <FaStar />
-                  </span>
-                  <span>
-                    <FaStar />
-                  </span>
-                  <span>
-                    <FaStar />
-                  </span>
-                </div>
-
+                  <StarCount Count={data.stars} />
                 <section className="flex gap-6">
                   <aside>{data.price}</aside>
                   <aside>
