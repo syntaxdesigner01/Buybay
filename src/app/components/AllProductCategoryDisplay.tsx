@@ -44,11 +44,11 @@ export default function AllProductCategoryDisplay() {
         </div>
       </section>
 
-      <section className="mt-10 grid grid-cols-4 justify-center items-center gap-y-10 gap-x-12 ml-4  w-full">
+      <section className="mt-10 grid grid-cols-4 justify-center items-center gap-y-10 gap-x-12   w-full">
         {allProducts.map((data: DataType) => {
           return (
             <section
-              className="w-[18vw] flex flex-col gap-2 justify-center items-start"
+              className="w-[22vw] flex flex-col gap-2 justify-center items-start"
               key={data.id}
             >
               <AllProductCategoryCard image={data?.image} />

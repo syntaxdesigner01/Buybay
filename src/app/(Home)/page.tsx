@@ -4,18 +4,23 @@ import HomeHeader from '../components/HomeHeader'
 import GeneralCategoryDisplay from '../components/GeneralCategoryDisplay'
 import PopularCategoryDisplay from '../components/PopularCategoryDisplay'
 import AllProductCategoryDisplay from '../components/AllProductCategoryDisplay'
+import FeaturedWeekCateogry from '../components/FeaturedWeekCateogry'
 
 
 export default function HomePage() {
   return (
-    <section className='px-10 '>
-      <HomeTopBar/>
-      <Navbar/>
-      <HomeHeader/>
-      <GeneralCategoryDisplay/>
-      <PopularCategoryDisplay/>
-      <AllProductCategoryDisplay/>
-    </section>
-  )
+    <>
+      <section className="px-10 ">
+        <HomeTopBar />
+        <Navbar />
+        <HomeHeader />
+        <GeneralCategoryDisplay />
+        <PopularCategoryDisplay />
+        <AllProductCategoryDisplay />
+      </section>
+      
+      <FeaturedWeekCateogry />
+    </>
+  );
 }
  
