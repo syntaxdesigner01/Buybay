@@ -13,9 +13,11 @@ export default function Button({
   Text,
   Link,
   Pointer,
+  Width
 }: {
   Text: string;
   Link: string;
+  Width?: string;
   Pointer:boolean;
 }) {
   const [showArrow, setShowArrow] = useState<boolean>(false);
@@ -27,7 +29,11 @@ export default function Button({
   }, [Pointer]);
 
   return (
-    <button onClick={() => route.push(Link)} className=" border-2 px-4  flex items-center justify-center gap-2 border-black text-sm">
+    <button
+      onClick={() => route.push(Link)}
+      className={`border-2 px-4 w-[${Width}] flex items-center justify-center gap-2 border-black text-sm`}
+      // style={{width:Width}}
+    >
       {Text}
       {showArrow && <FaArrowRightLong size={10} />}
     </button>
