@@ -1,10 +1,11 @@
 import React from 'react'
 import SectionTitleCard from './SectionTitleCard'
 import FeaturedWeekCard from './FeaturedWeekCard';
+import Image from 'next/image';
 
 export default function FeaturedWeekCateogry() {
   return (
-    <section className="bg-background py-20 px-10 mb-20 w-full">
+    <section className="bg-background pt-20 pb-28 px-10 mb-20 w-full">
       <SectionTitleCard
         HeaderText="This Week’s Featured "
         Position="start"
@@ -33,6 +34,10 @@ export default function FeaturedWeekCateogry() {
           image="prodcut-8.png"
           starCount={5}
         />
+      </section>
+
+      <section className='relative top-[12vh]'>
+        <Image src={"/icons/featuredweekFooter.png"} alt='logo' width={70} height={70} />
       </section>
     </section>
   );
