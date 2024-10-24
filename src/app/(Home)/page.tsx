@@ -10,6 +10,7 @@ import BestSellerCateogry from "../components/BestSellerCateogry";
 import Adsection from "../components/Adsection";
 import LiveSupportComponent from "../components/LiveSupportComponent";
 import FollowUs from "../components/FollowUs";
+import FooterComponent from "../components/FooterComponent";
 
 export default function HomePage() {
   return (
@@ -37,6 +38,8 @@ export default function HomePage() {
 
         <FollowUs />
       </section>
+
+      <FooterComponent/>
     </>
   );
 }
