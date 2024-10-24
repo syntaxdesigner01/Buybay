@@ -7,6 +7,7 @@ import AllProductCategoryDisplay from "../components/AllProductCategoryDisplay";
 import FeaturedWeekCateogry from "../components/FeaturedWeekCateogry";
 import TrendingArrivalsCateogry from "../components/TrendingArrivalsCateogry";
 import BestSellerCateogry from "../components/BestSellerCateogry";
+import Adsection from "../components/Adsection";
 
 export default function HomePage() {
   return (
@@ -28,6 +29,8 @@ export default function HomePage() {
 
       <section className="px-10  py-20">
         <BestSellerCateogry/>
+
+        <Adsection/>
         </section>
     </>
   );
