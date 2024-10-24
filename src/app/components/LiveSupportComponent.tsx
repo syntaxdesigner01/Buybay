@@ -1,9 +1,9 @@
 import Image from 'next/image'
 import React from 'react'
 
-export default function SupportComponent() {
+export default function LiveSupportComponent() {
   return (
-    <section className="w-full flex justify-center">
+    <section className="w-full flex justify-center mb-20">
       <section className=" flex w-[90%] justify-evenly items-center  shadow-md py-4 border">
         <section className="flex items-center gap-4 w-[20%] border-r-2 border-black">
           <aside>
@@ -50,7 +50,7 @@ export default function SupportComponent() {
             <Image src={"/icons/link 4.png"} alt="" width={40} height={40} />
           </aside>
           <aside className="flex flex-col gap-1">
-            <h1 className="text-[15px] font-semibold">Membership Discound </h1>
+            <h1 className="text-[15px] font-semibold">Membership Discount </h1>
             <p className=" text-[13px]">Onevery order over $140.00</p>
           </aside>
         </section>
