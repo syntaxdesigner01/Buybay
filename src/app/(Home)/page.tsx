@@ -8,6 +8,7 @@ import FeaturedWeekCateogry from "../components/FeaturedWeekCateogry";
 import TrendingArrivalsCateogry from "../components/TrendingArrivalsCateogry";
 import BestSellerCateogry from "../components/BestSellerCateogry";
 import Adsection from "../components/Adsection";
+import SupportComponent from "../components/SupportComponent";
 
 export default function HomePage() {
   return (
@@ -31,6 +32,8 @@ export default function HomePage() {
         <BestSellerCateogry/>
 
         <Adsection/>
+
+        <SupportComponent/>
         </section>
     </>
   );
