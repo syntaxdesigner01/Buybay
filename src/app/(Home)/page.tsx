@@ -7,6 +7,10 @@ import AllProductCategoryDisplay from "../components/AllProductCategoryDisplay";
 import FeaturedWeekCateogry from "../components/FeaturedWeekCateogry";
 import TrendingArrivalsCateogry from "../components/TrendingArrivalsCateogry";
 import BestSellerCateogry from "../components/BestSellerCateogry";
+import Adsection from "../components/Adsection";
+import LiveSupportComponent from "../components/LiveSupportComponent";
+import FollowUs from "../components/FollowUs";
+import FooterComponent from "../components/FooterComponent";
 
 export default function HomePage() {
   return (
@@ -27,8 +31,15 @@ export default function HomePage() {
       </section>
 
       <section className="px-10  py-20">
-        <BestSellerCateogry/>
-        </section>
+        <BestSellerCateogry />
+
+        <Adsection />
+        <LiveSupportComponent />
+
+        <FollowUs />
+      </section>
+
+      <FooterComponent/>
     </>
   );
 }
